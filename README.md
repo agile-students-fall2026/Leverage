@@ -1,19 +1,127 @@
-# Project Repository
+# Leverage
 
-This repository will be used for team projects.
+Leverage is a mobile web app that helps renters make better decisions when renting an apartment or negotiating their rent.
 
-Several sets of instructions are included in this repository. They should each be treated as separate assignments with their own due dates and sets of requirements.
+## Product Vision Statement
 
-1. See the [App Map & Wireframes](instructions-0a-app-map-wireframes.md) and [Prototyping](./instructions-0b-prototyping.md) instructions for the requirements of the initial user experience design of the app.
+For renters in expensive cities, especially students, recent graduates and international renters with limited credit history, who struggle to tell whether a rent is fair and to prove they are reliable tenants, Leverage is a mobile web app that compares an apartment's rent with similar apartments nearby, tracks where local rents are heading, and turns a renter's payment history into a verified Reliability Report they can share privately. Unlike rental listing sites that only show asking prices, Leverage gives renters real evidence they can use when applying for an apartment or negotiating a rent increase.
 
-1. Delete the contents of this file and replace with the contents of a proper README.md, as described in the [project setup instructions](./instructions-0c-project-setup.md)
+## Team
 
-1. See the [Sprint Planning instructions](instructions-0d-sprint-planning.md) for the requirements of Sprint Planning for each Sprint.
+| Name    | GitHub |
+| ------- | ------ |
+| Hamza   | [@muhammadhamza206](https://github.com/muhammadhamza206) |
+| Kashish | [@kashu0604](https://github.com/kashu0604) |
+| Izen    | [@izzennn](https://github.com/izzennn) |
+| Noor    | [@noor-kh](https://github.com/noor-kh) |
+| Rania   | [@raniaaamer999](https://github.com/raniaaamer999) |
+| Hashim  | [@Motabagani](https://github.com/Motabagani) |
 
-1. See the [Front-End Development instructions](./instructions-1-front-end.md) for the requirements of the initial Front-End Development.
+## How the project came to be
 
-1. See the [Back-End Development instructions](./instructions-2-back-end.md) for the requirements of the initial Back-End Development.
+Leverage started as a project proposal for the Agile Software Development and DevOps course at NYU. Several of us have dealt with renting in New York City ourselves, and kept running into the same two problems: not knowing whether an asking rent was fair, and being asked for a guarantor despite always paying rent on time. The team chose this proposal because it solves a real problem that we, our friends and many other students face, and because we can easily reach real users to test it.
 
-1. See the [Database Integration instructions](./instructions-3-database.md) for the requirements of integrating a database into the back-end.
+## What and why?
 
-1. See the [Deployment instructions](./instructions-4-deployment.md) for the requirements of deploying an app.
+When looking for an apartment, renters usually only see the asking price. They often do not know if that price is actually fair compared to similar apartments nearby, or how much rents in the area have been changing. This makes it difficult to know whether they are getting a good deal.
+
+Renters can also have trouble proving that they are reliable tenants. This is especially true for people with limited credit history, such as international students, recent immigrants, or people renting for the first time. Someone might have years of rental history and always pay on time but still be asked for a guarantor because they do not have enough credit history.
+
+Leverage brings these two problems together. It helps renters understand **what an apartment should cost, where the area is heading, and how they can prove that they are a reliable tenant.**
+
+The goal is to give renters information they can actually use when applying for an apartment or negotiating a rent increase.
+
+## For whom?
+
+Our main users are renters in expensive cities.
+
+This especially includes:
+
+* International students and recent immigrants with limited US credit history
+* Students and recent graduates renting for the first time
+* Long-term renters dealing with a rent increase or renewal
+* Anyone who wants to know whether an apartment is fairly priced
+
+These are real users that we can reach through our own university community, friends, and other renters. We can also talk to housing offices and tenant organizations to better understand the problems renters face.
+
+Small landlords could also benefit from the app. A renter could choose to share a Reliability Report showing their history of paying rent on time, giving landlords useful information without giving them access to the renter's private financial transactions.
+
+## How?
+
+Leverage has four main parts.
+
+### 1. Check an apartment
+
+A renter enters an apartment's address and asking rent. Leverage compares it with similar apartments nearby and available public housing data.
+
+For example, it could show:
+
+> **$2,650/month**
+> Similar apartments nearby: $2,400 to $2,500
+> This apartment is about 8% above the local average.
+
+The app also shows how rents in the area have changed and other information that helps the renter understand where the neighborhood may be heading during their lease.
+
+### 2. Create a Reliability Report
+
+Renters can connect their bank account or upload statements to verify their rental payment history.
+
+Leverage creates a simple report showing information such as:
+
+* Number of months of verified rent payments
+* On-time payment history
+* Income stability
+* Rent compared to income
+
+The renter controls what they share. A landlord sees the summary and verification, not the renter's private transactions.
+
+### 3. Help negotiate
+
+When applying for an apartment or receiving a rent increase, Leverage helps the renter understand their position.
+
+It shows comparable rents and the renter's own payment history, then helps them create a short message to send to their landlord.
+
+For example:
+
+> Similar two-bedroom apartments nearby are renting for around $2,450. Based on the local market and my history of paying rent on time, I would like to discuss the proposed rent increase.
+
+The renter can then record what happened, such as whether the landlord lowered the rent or accepted their application.
+
+### 4. Keep watching
+
+After checking an apartment, users can continue to follow the area. Leverage notifies them when there are major changes in local rents or other neighborhood information.
+
+This makes the app useful after someone has already signed a lease, especially when their renewal comes up.
+
+## Scope
+
+The first version focuses on NYC instead of trying to support every location. We use publicly available housing and neighborhood data and focus on making that information easy for renters to understand.
+
+The main parts of the project are:
+
+* A mobile interface for checking apartments
+* Collecting and organizing rental and neighborhood data
+* Comparing apartments with nearby rentals
+* Creating a Reliability Report
+* Allowing renters to privately share their report
+* A negotiation flow for applications and rent increases
+* A way for users to track changes in an area
+
+We are not building apartment listings, payment processing, a native mobile app, or a nationwide system. These features could be considered in the future, but they are not necessary for the first version.
+
+The goal for the semester is to build a working version that real renters can test and use, rather than a complete rental platform.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for our team norms, git workflow, rules for contributing, and how to set up the local development environment.
+
+## Building and testing
+
+The project is currently in the design stage (Sprint 0). Instructions for building and testing the project will be added here once development begins.
+
+## Additional documents
+
+* [UX-DESIGN.md](./UX-DESIGN.md): app map, wireframes and clickable prototype
+* [CONTRIBUTING.md](./CONTRIBUTING.md): how to contribute to this project
+* [Project board](https://github.com/orgs/agile-students-fall2026/projects/69): Product Backlog, Sprint Backlogs and Task Boards
+
