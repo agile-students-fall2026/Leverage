@@ -24,7 +24,7 @@
 
 ### Daily standups
 
-- Standups last no more than 15 minutes and are held at least three times per week, with at least two of those on weekdays, at times the team agrees on each sprint.
+- Standups last no more than 15 minutes and are held at least three times per week, with at least two of those on weekdays, Standups are held every **Monday, Wednesday and Friday at 7pm ET** on Discord voice, last no more than 15 minutes, and everyone attends live.
 - Everyone attends synchronously. Each member answers three questions: what they did since the last standup, what they are working on now, and anything blocking them.
 - The Scrum Master posts a written report of each standup to the team's standups channel.
 - We do not cover for teammates who do not participate. A member who makes no progress for two or more standups in a row will be reported to the professor.
@@ -55,7 +55,7 @@ We use the **feature branch workflow**.
 
 - Every piece of work must have a GitHub issue labeled `user story`, `task` or `spike`, plus the label of the sprint it belongs to (for example `Sprint 1`).
 - User stories stay unassigned. Tasks and spikes are assigned to the person doing them.
-- Move your issues across the task board as you work (To do, In progress, Done).
+- Move your issues across the task board as you work (To do, Awaiting review, Done).
 - Only push code that works. If you break the build, fixing it is your top priority.
 - Write clear, self-documenting code with descriptive names, and delete dead or commented-out code.
 - Do not commit secrets such as passwords or API keys, or anything listed in `.gitignore`.
